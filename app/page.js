@@ -1,9 +1,10 @@
+import Image from "next/image";
 import Button from "./components/Button";
 import {GiClockwork} from 'react-icons/gi'
 export default function Home() {
   return (
-    <main className="px-7 py-14 flex">
-      <section className="w-[50%">
+    <main className="px-7 py-14 flex justify-center">
+      <section className="w-[50%]">
       <div className="textContainer flex gap-4 items-center] ">
         <div className="line"></div>
         <div className="flex flex-col gap-1">
@@ -31,8 +32,37 @@ export default function Home() {
         </div>
       </div>
       </section>
+       
+      <section className="imgContainer w-[40%]">
+      <div className="">
+          <Image
+            src={'/rs.jpg'}
+            width={500}
+            height={500}
+            alt="Food" 
+            className=" rounded-3xl"
+          />
+        </div>
+      {/* <div className="w-[]">
+          <Image
+            src={'/food.png'}
+            width={200}
+            height={200}
+            alt="Food" 
+            className="rounded-full h-[]"
 
-      <section className="imgContainer"></section>
+          />
+        </div> */}
+      {/* <div className="w-[]">
+          <Image
+            src={'/gobe.jpg'}
+            width={200}
+            height={200}
+            alt="Food" 
+            className="rounded-full h-[]"
+          />
+        </div> */}
+      </section>
     </main>
   );
 }
