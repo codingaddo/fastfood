@@ -1,8 +1,21 @@
+'use client'
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 const Navbar = ()=>{
+    const [isScroll, setIsScroll] = useState(false)
+
+    useEffect(()=>{
+        document.addEventListener("scroll",()=>{
+            if(window.scrollY > 10){
+                setIsScroll(true)
+            }else{
+                setIsScroll(false)
+            }
+        })
+    },[])
     return(
-        <div className="flex justify-between items-center md:px-14 p-4">
+        <div className={ isScroll? "fixed w-full bg-white shadow-2xl flex justify-between items-center md:px-14 p-4":'fixed w-full bg-white flex justify-between items-center md:px-14 p-4'}>
             <div>
                 <h className='text-xl text-black font-bold'>Habibis</h>
             </div>

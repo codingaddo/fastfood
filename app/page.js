@@ -3,7 +3,7 @@ import Button from "./components/Button";
 import {GiClockwork} from 'react-icons/gi'
 export default function Home() {
   return (
-    <main className="px-7 py-14 flex justify-center">
+    <main className="px-7 pb-14 pt-24 flex justify-center">
       <section className="w-[50%]">
       <div className="textContainer flex gap-4 items-center] ">
         <div className="line"></div>
@@ -18,8 +18,8 @@ export default function Home() {
       </div>
       <div className="btnContiner flex gap-7 pt-7">
       <div className="line-1"></div>
-        <Button txt={'View Menu'}/>
-        <Button txt={'Catering Services'}/>
+        <Button txt={'View Menu'} url={'/about'}/>
+        <Button txt={'Catering Services'} url={''}/>
       </div>
       <div className="pt-7 flex gap-7 ">
       <div className="line-1"></div>
