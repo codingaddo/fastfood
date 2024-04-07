@@ -8,7 +8,7 @@ const Footer = () => {
     const date = new Date().getFullYear()
   return (
     <>
-    <footer className=' w-full bg-[#fa6969] h-72 flex justify-between py-10 px-20'>
+    <footer className=' w-full bg-[#fa6969] md:h-72 md:flex-row flex-col  flex justify-between py-10 px-20'>
         <section>
             <div>
                 LOGO

@@ -18,3 +18,45 @@
   width: 5px;
   background-color: #fa6969;
 }
+
+.menu{
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* gap: 6px; */
+  /* position: relative; */
+
+}
+
+.dash{
+  height: 4px;
+  width: 35px;
+  background-color: #000;
+}
+
+.top,.middle,.down{
+  transition: all 0.75s;
+  transform: rotate(0);
+}
+
+.middle{
+  transform: translateY(10px);
+}
+
+.down{
+  transform: translateY(20px);
+}
+.open{
+  transform: rotate(90deg);
+  transform: translateY(0);
+}
+.open .top{
+  transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.open .down{
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+.open .middle{
+  display: none;
+}

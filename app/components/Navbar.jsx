@@ -26,6 +26,21 @@ const Navbar = ()=>{
                 <li className="hover:text-red-600"><Link href={'/catering'}>Catering</Link></li>
                 <li className="hover:text-red-600"><Link href={'/contact'}>Contact</Link></li>
             </ul>
+        <div className="menu open">
+            <div className="dash top "></div>
+            <div className="dash middle"></div>
+            <div className="dash down"></div>
+        </div>
+
+
+            {/* Responsive NavBar */}
+            {/* <ul className="md:hidden">
+            <li className="hover:text-red-600"><Link href={'/'}>Home</Link></li>
+                <li className="hover:text-red-600"><Link href={'/about'}>About</Link></li>
+                <li className="hover:text-red-600"><Link href={'/menu'}>Menu</Link></li>
+                <li className="hover:text-red-600"><Link href={'/catering'}>Catering</Link></li>
+                <li className="hover:text-red-600"><Link href={'/contact'}>Contact</Link></li>
+            </ul> */}
         </div>
     )
 
