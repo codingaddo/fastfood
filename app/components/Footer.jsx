@@ -8,7 +8,7 @@ const Footer = () => {
     const date = new Date().getFullYear()
   return (
     <>
-    <footer className=' w-full bg-[#fa6969] md:h-72 md:flex-row flex-col  flex justify-between py-10 px-20'>
+    <footer className='w-full gap-5 md:gap-1 bg-[#fa6969] md:h-72 md:flex-row flex-col flex justify-center md:justify-between py-10 px-10 md:px-20'>
         <section>
             <div>
                 LOGO
@@ -40,16 +40,16 @@ const Footer = () => {
         </section>
         <section className='flex flex-col gap-1'>
         <h3 className='font-semibold text-2xl'>Contact Info</h3>
-        <div className='flex flex-col gap-2 text-white'>
-            <div className='flex items-center gap-2'>
+        <div className='flex flex-col  gap-4 md:gap-2 text-white'>
+            <div className='flex items-center  gap-2'>
                 <FaLocationArrow/>
             <Link href={''}>41 Brybeck crescent, Kitchener Ontario N2M 2C5</Link>
             </div>
-            <div className='flex items-center gap-2'> 
-            <FaPhone/>
+            <div className='flex items-center   gap-2'> 
+            <FaPhone />
             <Link href={''}>+1(519)725-4996</Link>
             </div>
-            <div className='flex items-center gap-2'> 
+            <div className='flex items-center  gap-2'> 
             <FaMailBulk/>
             <Link href={''}>xyz@gmail.com</Link>
             </div>

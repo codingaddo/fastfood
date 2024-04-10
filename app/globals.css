@@ -29,8 +29,8 @@
 
 .dash{
   height: 4px;
-  width: 35px;
-  background-color: #000;
+  width: 40px;
+  background-color: #fa6969;
 }
 
 .top,.middle,.down{
@@ -39,22 +39,22 @@
 }
 
 .middle{
-  transform: translateY(10px);
+  transform: translateY(7px);
 }
 
 .down{
-  transform: translateY(20px);
+  transform: translateY(14px);
 }
 .open{
   transform: rotate(90deg);
   transform: translateY(0);
 }
 .open .top{
-  transform: rotate(45deg) translateY(6px) translate(6px);
+  transform: rotate(45deg) translateY(8px) translate(6px);
 }
 
 .open .down{
-  transform: rotate(-45deg) translateY(6px) translate(-6px);
+  transform: rotate(-45deg) translateY(4px) translate(-6px);
 }
 
 .open .middle{
