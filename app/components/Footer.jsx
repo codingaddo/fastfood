@@ -43,15 +43,15 @@ const Footer = () => {
         <div className='flex flex-col  gap-4 md:gap-2 text-white'>
             <div className='flex items-center  gap-2'>
                 <FaLocationArrow/>
-            <Link href={''}>41 Brybeck crescent, Kitchener Ontario N2M 2C5</Link>
+            <Link href={'https://www.google.com/search?q=41+Brybeck+crescent%2C+Kitchener+Ontario+N2M+2C5&oq=41+Brybeck+crescent%2C+Kitchener+Ontario+N2M+2C5&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIKCAEQABiABBiiBDIKCAIQABiABBiiBDIKCAMQABiABBiiBDIKCAQQABiABBiiBNIBCDYyNTJqMGo3qAIIsAIB&sourceid=chrome&ie=UTF-8'} target='_blank'>41 Brybeck crescent, Kitchener Ontario N2M 2C5</Link>
             </div>
             <div className='flex items-center   gap-2'> 
             <FaPhone />
-            <Link href={''}>+1(519)725-4996</Link>
+            <Link href={'tel:+1(519)725-4996'}>+1(519)725-4996</Link>
             </div>
             <div className='flex items-center  gap-2'> 
             <FaMailBulk/>
-            <Link href={''}>xyz@gmail.com</Link>
+            <Link href={'mailto:xyx@gmail.com'}>xyz@gmail.com</Link>
             </div>
         </div>
             

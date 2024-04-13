@@ -3,7 +3,7 @@ import Button from "./components/Button";
 import {GiClockwork} from 'react-icons/gi'
 export default function Home() {
   return (
-    <main className="md:px-7 px-5 pb-14 pt-24 flex items-center justify-center">
+    <main className="md:px-7 px-5 pb-14 md:pt-4 pt-24 flex items-center justify-center">
       <section className="md:w-[50%] flex flex-col items-center text-center md:text-start md:block">
       <div className="textContainer flex gap-4 items-center] ">
         <div className=" hidden md:block line"></div>
@@ -13,11 +13,11 @@ export default function Home() {
           <h1 className="text-[2.05rem] md:hidden text-center font-bold text-slate-600">Enjoy a Taste of Ghana</h1>
           <p className=" text-2xl md:text-xl md:w-80 text-slate-800">Bringing you the authentic Ghanaian Zongo style of cooking</p>
 
-          <div className="py-5 px-2 md:hidden flex flex-col items-center w-full">
+          <div className="px-7 rotate-90 md:hidden flex flex-col items-center w-full">
           <Image
-            src={'/rs.jpg'}
-            width={600}
-            height={500}
+            src={'/wk.jpg'}
+            width={500}
+            height={200}
             alt="Food" 
             className=" rounded-3xl"
           />
@@ -45,9 +45,9 @@ export default function Home() {
       </section>
        
       <section className="hidden md:block imgContainer w-[40%]">
-      <div className="">
+      <div className=" rotate-90">
           <Image
-            src={'/rs.jpg'}
+            src={'/wk.jpg'}
             width={500}
             height={500}
             alt="Food" 

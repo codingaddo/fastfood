@@ -1,11 +1,12 @@
 'use client'
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import Context, { useMyContext } from "../hooks/context";
 
 const Navbar = ()=>{
     const [isScroll, setIsScroll] = useState(false)
     const [isOpen, setIsOpen] = useState(false)
-
+    // const {isOpen,setIsOpen} = useMyContext()
     const handleOpenNav = ()=>{
         setIsOpen(!isOpen)
     }
@@ -20,7 +21,8 @@ const Navbar = ()=>{
         })
     },[])
     return(
-        <div className={ isScroll? "fixed w-full bg-white shadow-2xl flex justify-between items-center md:px-14 p-4 md:py-4 py-5":'fixed w-full bg-white flex justify-between items-center md:px-14 p-4 md:py-4 py-5'}>
+        <>
+        <div className={ isScroll? " z-50 fixed w-full bg-white shadow-2xl flex justify-between items-center md:px-14 p-4 md:py-4 py-5":'fixed z-50  w-full bg-white flex justify-between items-center md:px-14 p-4 md:py-4 py-5'}>
             <div>
                 <h className='text-xl text-black font-bold'>Habibis</h>
             </div>
@@ -39,14 +41,18 @@ const Navbar = ()=>{
 
 
             {/* Responsive NavBar */}
-            {/* <ul className="md:hidden">
-            <li className="hover:text-red-600"><Link href={'/'}>Home</Link></li>
-                <li className="hover:text-red-600"><Link href={'/about'}>About</Link></li>
-                <li className="hover:text-red-600"><Link href={'/menu'}>Menu</Link></li>
-                <li className="hover:text-red-600"><Link href={'/catering'}>Catering</Link></li>
-                <li className="hover:text-red-600"><Link href={'/contact'}>Contact</Link></li>
-            </ul> */}
+    </div>
+        <div className={isOpen?" open-nav bg-slate-200 rounded-bl-xl shadow-2xl z-50 p-10 md:hidden":"Rnav bg-slate-200 rounded-bl-xl shadow-2xl z-50 p-10 md:hidden"}>
+             <ul className="text-xl flex flex-col gap-4">
+            <li className="hover:text-red-600"><Link href={'/'} onClick={()=>{setIsOpen(false)}}>Home</Link></li>
+                <li className="hover:text-red-600"><Link href={'/about'} onClick={()=>{setIsOpen(false)}}>About</Link></li>
+                <li className="hover:text-red-600"><Link href={'/menu'} onClick={()=>{setIsOpen(false)}}>Menu</Link></li>
+                <li className="hover:text-red-600"><Link href={'/catering'} onClick={()=>{setIsOpen(false)}}>Catering</Link></li>
+                <li className="hover:text-red-600"><Link href={'/contact'} onClick={()=>{setIsOpen(false)}}>Contact</Link></li>
+            </ul> 
         </div>
+    </>
+
     )
 
 }
