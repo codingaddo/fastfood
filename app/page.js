@@ -1,7 +1,10 @@
 import Image from "next/image";
 import Button from "./components/Button";
 import {GiClockwork} from 'react-icons/gi'
+import { useMyContext } from "./hooks/context";
 export default function Home() {
+  // const {isOpen,setIsOpen} = useMyContext()
+
   return (
     <main className="md:px-7 px-5 pb-14 md:pt-4 pt-24 flex items-center justify-center">
       <section className="md:w-[50%] flex flex-col items-center text-center md:text-start md:block">

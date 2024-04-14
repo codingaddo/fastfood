@@ -1,7 +1,8 @@
+'use client'
 import React, { createContext, useContext, useState } from 'react'
 
 const myContext =  createContext()
-const Context = () => {
+export const Context = ({children}) => {
     const [isOpen, setIsOpen] = useState(false)
 
 
@@ -10,14 +11,10 @@ const Context = () => {
       isOpen,
       setIsOpen
     }}>
-
+      {children}
     </myContext.Provider>
   )
 }
 
-const useMyContext=()=>{
-  const Context = useContext(Context)
+export const useMyContext = ()=>useContext(myContext)
 
-}
-
-export { Context, useMyContext }

@@ -1,12 +1,12 @@
 'use client'
 import Link from "next/link";
-import { useContext, useEffect, useState } from "react";
-import Context, { useMyContext } from "../hooks/context";
+import { useEffect, useState } from "react";
+import { useMyContext } from "../hooks/context";
 
 const Navbar = ()=>{
     const [isScroll, setIsScroll] = useState(false)
-    const [isOpen, setIsOpen] = useState(false)
-    // const {isOpen,setIsOpen} = useMyContext()
+    // const [isOpen, setIsOpen] = useState(false)
+    const {isOpen,setIsOpen} = useMyContext()
     const handleOpenNav = ()=>{
         setIsOpen(!isOpen)
     }
