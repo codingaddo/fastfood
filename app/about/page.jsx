@@ -6,7 +6,7 @@ const page = () => {
   return (
     < >
       <div>
-        <Header text={'about us'} img={'/wk.jpg'}/>
+        <Header text={'about us'} img={'/wk.jpg'} color={'text-white'}/>
       </div>
       <section className='flex md:flex-row flex-col px-7  md:px-16 justify-center gap-16 py-16'>
         <section className='md:w-[50%] text-center items-center flex flex-col gap-4'>
