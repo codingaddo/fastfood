@@ -57,6 +57,11 @@ const Footer = () => {
             
         </section>
     </footer>
+    <div className='text-center p-4 bg-black flex flex-col items-center'>
+        <span className='text-slate-300 text-md'>Website Powered by</span>
+        <Link href={'https://codingaddo-eta.vercel.app/'} target='_blank' className='text-lg text-orange-500 font-medium'> MYTECH DEVELOPMENT (+233 551 817 972)</Link>
+       
+      </div>
     </>
 
   )
