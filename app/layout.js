@@ -21,8 +21,8 @@ export default function RootLayout({ children }) {
       <body className={''}>
       <Provider>
        <Navbar/>
-        {children}
         <BackToTop/>
+        {children}
        <Whatsapp/>
         <Footer/>
       </Provider>
