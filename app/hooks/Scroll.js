@@ -12,7 +12,7 @@ const useScroll = () => {
         }
       })
 
-    },[])
+    },[backtoTop])
 
     const scrollUp = ()=>{
      window.scroll({
