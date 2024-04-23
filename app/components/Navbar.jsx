@@ -6,8 +6,8 @@ import { usePathname } from "next/navigation";
 
 const Navbar = ()=>{
     const [isScroll, setIsScroll] = useState(false)
-    // const [isOpen, setIsOpen] = useState(false)
-    const {isOpen,setIsOpen} = useMyContext()
+    const [isOpen, setIsOpen] = useState(false)
+    // const {isOpen,setIsOpen} = useMyContext()
 
     const pathName = usePathname()
 
