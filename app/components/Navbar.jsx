@@ -1,7 +1,7 @@
 'use client'
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { useMyContext } from "../hooks/context";
+import { useMyContext } from "./hooks/context";
 import { usePathname } from "next/navigation";
 
 const Navbar = ()=>{

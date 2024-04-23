@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import {FaAngleUp} from 'react-icons/fa'
-import useScroll from '../hooks/Scroll'
+import useScroll from './hooks/scroll'
 
 const BackToTop = () => {
     const [top,setTop,ScrollUp] = useScroll()

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Button from "./components/Button";
 import {GiClockwork} from 'react-icons/gi'
-import { useMyContext } from "./hooks/context";
+import { useMyContext } from "./components/hooks/context";
 export default function Home() {
   // const {isOpen,setIsOpen} = useMyContext()
 
