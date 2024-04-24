@@ -1,5 +1,5 @@
 
-import { Inter, Roboto_Condensed, Roboto_Flex, Roboto_Serif, Roboto_Slab  } from "next/font/google";
+import { Inter, Roboto_Condensed, Roboto_Flex, Roboto, Roboto_Slab, Teko  } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -8,7 +8,7 @@ import BackToTop from "./components/BackToTop";
 import Provider from "./context/Provider";
 
 const inter = Inter({ subsets: ["latin"], display:'swap' });
-const roboto = Roboto_Condensed({ subsets: ["latin"], display:'swap',weight:'500' });
+const roboto = Roboto({ subsets: ["latin"], display:'swap',weight:'400' });
 
 export const metadata = {
   title: "Habibis|Home",

@@ -48,7 +48,7 @@ const Navbar = ()=>{
             {/* Responsive NavBar */}
         <div className={isOpen?" open-nav  z-50 p-10 md:hidden":"Rnav  z-50 p-10 md:hidden"} onClick={()=>{setIsOpen(false)}}>
              <ul className="text-xl flex flex-col gap-4 bg-slate-200 relative left-28 bottom-10 p-10 pb-20 rounded-bl-xl shadow-2xl">
-            <li className="hover:text-red-600"><Link  href={'/'} className={pathName==='/' ?"text-[#fa6969]" :''} onClick={()=>{setIsOpen(false)}}>Home</Link></li>
+            <li className="hover:text-red-600 uppercase"><Link  href={'/'} className={pathName==='/' ?"text-[#fa6969]" :''} onClick={()=>{setIsOpen(false)}}>Home</Link></li>
                 <li className="hover:text-red-600 uppercase"><Link className={pathName==='/about' ?"text-[#fa6969]" :''} href={'/about'} onClick={()=>{setIsOpen(false)}}>About</Link></li>
                 <li className="hover:text-red-600 uppercase"><Link className={pathName==='/menu' ?"text-[#fa6969]" :''} href={'/menu'} onClick={()=>{setIsOpen(false)}}>Menu</Link></li>
                 <li className="hover:text-red-600 uppercase"><Link className={pathName==='/catering' ?"text-[#fa6969]" :''} href={'/catering'} onClick={()=>{setIsOpen(false)}}>Catering</Link></li>

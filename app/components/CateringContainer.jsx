@@ -14,7 +14,7 @@ const CateringContainer = ({url,foodName,children}) => {
             />
         </div>
 
-            <div className='flex flex-col gap-2 items-center px-2 md:px-5  w-full md:p-'>
+            <div className='flex flex-col gap-2 items-center px-2 md:px-5  w-full '>
                <h1 className='text-center  text-3xl p-2  text-[#fa6969] font-bold'>{foodName}</h1>
                 {children}
             </div>
