@@ -6,15 +6,15 @@ export default function Home() {
   // const {isOpen,setIsOpen} = useMyContext()
 
   return (
-    <main className="md:px-10 px-5 pb-14 md:pt-20 pt-24 flex items-center justify-center">
-      <section className="md:w-[60%] flex flex-col items-center text-center md:text-start md:block">
+    <main className="md:px-10 bg-slate-50 px-5 pb-14 md:pt-20 pt-24 flex items-center justify-center">
+      <section className="md:w-[60%] flex  flex-col items-center text-center md:text-start md:block">
       <div className="textContainer flex gap-4 items-center] ">
         <div className=" hidden md:block line"></div>
         <div className="flex flex-col gap-1">
           <h1 className="text-3xl hidden md:block font-bold text-slate-600">Enjoy a Taste of</h1>
           <h1 className="text-4xl hidden md:block font-bold text-slate-600">Ghana</h1>
           <h1 className="text-[2.05rem] md:hidden text-center font-bold text-slate-600">Enjoy a Taste of Ghana</h1>
-          <p className=" text-2xl md:text-xl md:w-90 text-slate-800">Bringing you the authentic Ghanaian Zongo style of cooking</p>
+          <p className=" text-2xl md:text-xl md:w-72 text-slate-800">Bringing you the authentic Ghanaian Zongo style of cooking</p>
 
           <div className="px-7 rotate-90 md:hidden flex flex-col items-center w-full">
           <Image
@@ -47,7 +47,7 @@ export default function Home() {
       </div>
       </section>
        
-      <section className="hidden md:block imgContainer w-[35%]">
+      <section className="hidden md:block imgContainer md:w-[35%]">
       <div className=" rotate-90">
           <Image
             src={'/wk.jpg'}
