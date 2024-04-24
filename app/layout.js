@@ -1,5 +1,5 @@
 
-import { Inter } from "next/font/google";
+import { Inter, Roboto_Condensed, Roboto_Flex, Roboto_Serif, Roboto_Slab  } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -7,7 +7,8 @@ import Whatsapp from "./components/Whatsapp";
 import BackToTop from "./components/BackToTop";
 import Provider from "./context/Provider";
 
-// const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"], display:'swap' });
+const roboto = Roboto_Condensed({ subsets: ["latin"], display:'swap',weight:'500' });
 
 export const metadata = {
   title: "Habibis|Home",
@@ -17,7 +18,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
 
   return (
-    <html lang="en">
+    <html lang="en" className={roboto.className}>
       <body className={''}>
       <Provider>
        <Navbar/>
