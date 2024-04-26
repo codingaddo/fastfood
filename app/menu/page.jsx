@@ -1,6 +1,8 @@
+'use client'
 import React from 'react'
 import Header from '../components/Header'
 import MenuContainer from '../components/MenuContainer'
+import PopUp from '../components/PopUp'
 
 const page = () => {
   return (
@@ -18,6 +20,7 @@ const page = () => {
             <MenuContainer name={'Asorted Waakye'} price={100} image={'/wk.jpg'}/>
             <MenuContainer name={'Asorted Waakye'} price={100} image={'/wk.jpg'}/>
             <MenuContainer name={'Asorted Waakye'} price={100} image={'/wk.jpg'}/>
+            {/* <PopUp/> */}
         </div>
         </div>
 

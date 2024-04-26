@@ -57,8 +57,8 @@ export default function Home() {
             className=" rounded-3xl"
           />
         </div>
-     
       </section>
+
     </main>
   );
 }
