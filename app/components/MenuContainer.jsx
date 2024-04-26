@@ -3,12 +3,13 @@ import Image from 'next/image'
 import React, { useState } from 'react'
 import { FaCartShopping } from "react-icons/fa6";
 import PopUp from './PopUp';
+import { FaTimesCircle } from 'react-icons/fa';
 
 const MenuContainer = ({name,image,price,url}) => {
   const [isOpen, setIsOpen] = useState(false)
 
   function handleClick(){
-    setIsOpen(!isOpen)
+    setIsOpen(true)
   }
 
   return (
@@ -29,15 +30,18 @@ const MenuContainer = ({name,image,price,url}) => {
         </div>
         <div>
             
-            <button className='flex w-[100px] h-[40px] justify-center items-center text-slate-50 gap-2 px-2 bg-[#fa6969] p-1 rounded-xl'>
+            <button className='flex w-[100px] h-[40px] justify-center items-center text-slate-50 gap-2 px-2 bg-[#fa6969] p-1 rounded-xl' onClick={handleClick}>
             <FaCartShopping className='text-sm' /><span className=' text-sm'>Order</span>
             </button>
         </div>
 
         {
             isOpen &&
-        <div>
+        <div className='fixed top-20 left-44 w-[900px] flex items-center justify-center h-[600px] bg-slate-50 ' onClick={()=>setIsOpen(false)}>
             <PopUp/>
+            <div className='absolute left-[92%] bottom-[92%] cursor-pointer' onClick={()=>setIsOpen(false)}>
+            <FaTimesCircle className='text-slate-500 text-3xl'/>
+        </div>
         </div>
 
         }
